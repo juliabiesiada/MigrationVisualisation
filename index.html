@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Immigration database</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body class="mainBody">
+  <main>
+    <p class="titleParagraph">Who is the USA made of?</p>
+    <p class="plainText">This visualisation provides information about the variability of country of birth and reason of entry of the migrants entering the Unites States of America
+    over the years 2006-2019. The data can be filtered by name or year, and/or year. The first visualisation defaultly contains top 100 countries of birth in a given year
+   (defaultly 2019), but this number can be modified using a slider. It is important to underline that not all of the data could be disclosed. For the purpose of this visualisation,
+    the missing data was replaced with a 0 and the countries affected by it were marked with an asterisk (*).</p>
+    <p id="buttonsLetters" class="buttonContainer">
+      <p class="buttonsLabel">Filter by name or continent: </p>
+      <button id="btnA" class="skewBtn">A</button>
+      <button id="btnB" class="skewBtn">B</button>
+      <button id="btnC" class="skewBtn">C</button>
+      <button id="btnD" class="skewBtn">D</button>
+      <button id="btnE" class="skewBtn">E</button>
+      <button id="btnF" class="skewBtn">F</button>
+      <button id="btnG" class="skewBtn">G</button>
+      <button id="btnH" class="skewBtn">H</button>
+      <button id="btnI" class="skewBtn">I</button>
+      <button id="btnJ" class="skewBtn">J</button>
+      <button id="btnK" class="skewBtn">K</button>
+      <button id="btnL" class="skewBtn">L</button>
+      <button id="btnM" class="skewBtn">M</button>
+      <button id="btnN" class="skewBtn">N</button>
+      <button id="btnO" class="skewBtn">O</button>
+      <button id="btnP" class="skewBtn">P</button>
+      <button id="btnQ" class="skewBtn">Q</button>
+      <button id="btnR" class="skewBtn">R</button>
+      <button id="btnS" class="skewBtn">S</button>
+      <button id="btnT" class="skewBtn">T</button>
+      <button id="btnU" class="skewBtn">U</button>
+      <button id="btnV" class="skewBtn">V</button>
+      <button id="btnW" class="skewBtn">W</button>
+      <button id="btnX" class="skewBtn">X</button>
+      <button id="btnY" class="skewBtn">Y</button>
+      <button id="btnZ" class="skewBtn">Z</button>
+      <button id="btnALL" class="skewBtnAll">ALL</button>
+    </p>
+    <p id="buttonsContinents" class="buttonContainer">
+      <button id="btnEurope" class="skewBtnC">Europe</button>
+      <button id="btnAfrica" class="skewBtnC">Africa</button>
+      <button id="btnSouthAmerica" class="skewBtnC">South America</button>
+      <button id="btnNorthAmerica" class="skewBtnC">North America</button>
+      <button id="btnAustraliaAndOceania" class="skewBtnC">Australia and Oceania</button>
+      <button id="btnAsia" class="skewBtnC">Asia</button>
+    </p>
+    <p class="buttonsLabel">and year: </p>
+    <p id="buttonsYears" class="buttonContainer">
+      <button id="btn2019" class="skewBtnY">2019</button>
+      <button id="btn2018" class="skewBtnY">2018</button>
+      <button id="btn2017" class="skewBtnY">2017</button>
+      <button id="btn2016" class="skewBtnY">2016</button>
+      <button id="btn2015" class="skewBtnY">2015</button>
+      <button id="btn2014" class="skewBtnY">2014</button>
+      <button id="btn2013" class="skewBtnY">2013</button>
+      <button id="btn2012" class="skewBtnY">2012</button>
+      <button id="btn2011" class="skewBtnY">2011</button>
+      <button id="btn2010" class="skewBtnY">2010</button>
+      <button id="btn2009" class="skewBtnY">2009</button>
+      <button id="btn2008" class="skewBtnY">2008</button>
+      <button id="btn2007" class="skewBtnY">2007</button>
+      <button id="btn2006" class="skewBtnY">2006</button>
+    </p>
+
+    <p class="sliderP">
+      <input type="range" min="1" max="209" value="100" class="slider" id="sliderRange">
+    </p>
+  </main>
+</body>
+
+</html>
